@@ -1,4 +1,4 @@
-package com.groo.viviscreen;
+package com.groo.viviscreen.components;
 
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
@@ -11,6 +11,8 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.groo.viviscreen.R;
 
 public class UnlockBar extends RelativeLayout {
 	private OnUnlockListener listenerLeft = null;

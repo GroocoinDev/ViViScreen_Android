@@ -24,7 +24,7 @@
             android:name=".LockScreenActivity"
             android:launchMode="singleInstance"
             android:showOnLockScreen="true"
-            android:theme="@style/AppThemeNoAction"></activity>
+            android:theme="@style/AppThemeNoAction" />
         <activity
             android:name=".MainActivity"
             android:excludeFromRecents="true"
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".utils.LockscreenService"></service>
+        <service android:name=".utils.LockscreenService" />
         <service
             android:name=".utils.LockWindowAccessibilityService"
             android:label="@string/app_name"
@@ -53,7 +53,7 @@
         <activity
             android:name="viviscreen.groo.com.viviscreen.Main3Activity"
             android:label="@string/title_activity_main3"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

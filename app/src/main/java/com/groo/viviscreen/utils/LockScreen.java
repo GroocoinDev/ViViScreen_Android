@@ -38,7 +38,7 @@ public class LockScreen {
 
     public void active(){
         if(disableHomeButton){
-            showSettingAccesability();
+            //showSettingAccesability();
         }
 
         if(context!=null) {

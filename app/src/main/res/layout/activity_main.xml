@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -7,18 +8,24 @@
     android:background="@android:color/black"
     tools:context="com.groo.viviscreen.LockScreenActivity">
 
-    <ImageView
-        android:layout_centerHorizontal="true"
-        android:layout_width="300dp"
-        android:layout_marginTop="70dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/iklan"
-        android:adjustViewBounds="true" />
+    <com.groo.viviscreen.components.VerticalViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <com.groo.viviscreen.UnlockBar
+    <com.groo.viviscreen.components.UnlockBar
         android:id="@+id/unlock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:text="12:54" />
 </RelativeLayout>
