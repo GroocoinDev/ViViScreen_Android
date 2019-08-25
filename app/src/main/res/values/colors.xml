@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#FF4081</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="particle1">#fce18a</color>
+    <color name="particle2">#ff726e</color>
+    <color name="particle3">#b58cef</color>
+    <color name="particle4">#f4316d</color>
 </resources>

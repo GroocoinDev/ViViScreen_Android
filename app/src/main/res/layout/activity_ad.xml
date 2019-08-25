@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.groo.viviscreen.ui.ADActivity">
+
+    <com.groo.viviscreen.components.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/subnav_profile_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/nav_icon_profile_off"
+        android:padding="12.5dp"
+        android:layout_marginLeft="12.5dp"
+        />
+
+    <ImageView
+        android:id="@+id/subnav_star_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/nav_icon_star_off"
+        android:padding="12.5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/subnav_point_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/nav_icon_point_off"
+        android:padding="12.5dp"
+        android:layout_marginRight="12.5dp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

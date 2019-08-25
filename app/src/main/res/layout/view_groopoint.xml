@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groopoint_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:padding="25dp"
+    android:background="@drawable/background_groopoint_round">
+
+    <TextView
+        android:id="@+id/my_groocoin_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.1"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:text="MY 그루포인트"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="앱 실행"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/app_launch_point_textview"
+            android:layout_alignBottom="@+id/app_launch_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/app_launch_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:text="600"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="컨텐츠 시청"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/content_view_point_textview"
+            android:layout_alignBottom="@+id/content_view_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/content_view_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:text="2,000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="컨텐츠 미션"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/content_mission_point_textview"
+            android:layout_alignBottom="@+id/content_mission_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/content_mission_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:text="1,400"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="친구 추천"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/friend_refer_point_textview"
+            android:layout_alignBottom="@+id/friend_refer_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/friend_refer_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:text="500"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:text="이벤트 참여"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/event_join_point_textview"
+            android:layout_alignBottom="@+id/event_join_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/event_join_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:text="1,000"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#7fffffff"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:text="Total"/>
+
+        <ImageView
+            android:layout_width="10.5dp"
+            android:layout_height="10.5dp"
+            android:layout_toLeftOf="@+id/total_point_textview"
+            android:layout_alignBottom="@+id/total_point_textview"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_groopoint"/>
+
+        <TextView
+            android:id="@+id/total_point_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:text="5,500"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

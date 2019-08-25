@@ -4,7 +4,6 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.provider.Settings;
 
 public class LockScreen {
     private static LockScreen singleton;
@@ -27,13 +26,6 @@ public class LockScreen {
     public void init(Context context, boolean disableHomeButton){
         this.context = context;
         this.disableHomeButton = disableHomeButton;
-    }
-
-    private void showSettingAccesability(){
-        if(!isMyServiceRunning(com.groo.viviscreen.utils.LockWindowAccessibilityService.class)) {
-            Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
-            context.startActivity(intent);
-        }
     }
 
     public void active(){
@@ -67,7 +59,4 @@ public class LockScreen {
         }
         return false;
     }
-
-
-
 }

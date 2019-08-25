@@ -16,8 +16,8 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.groo.viviscreen.LockApplication;
-import com.groo.viviscreen.LockScreenActivity;
-import com.groo.viviscreen.MainActivity;
+import com.groo.viviscreen.ui.ADActivity;
+import com.groo.viviscreen.ui.LoginActivity;
 import com.groo.viviscreen.R;
 
 public class LockscreenService extends Service {
@@ -88,7 +88,7 @@ public class LockscreenService extends Service {
     }
 
     private void startLockscreenActivity() {
-        Intent startLockscreenActIntent = new Intent(mContext, LockScreenActivity.class);
+        Intent startLockscreenActIntent = new Intent(mContext, ADActivity.class);
         startLockscreenActIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(startLockscreenActIntent);
     }
@@ -99,10 +99,10 @@ public class LockscreenService extends Service {
     private void showNotification() {
         CharSequence text = "Running";
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-                new Intent(this, MainActivity.class), 0);
+                new Intent(this, LoginActivity.class), 0);
 
         Notification notification = new Notification.Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.mipmap.app_icon)
                 .setTicker(text)
                 .setWhen(System.currentTimeMillis())
                 .setContentTitle(getText(R.string.app_name))
@@ -115,7 +115,7 @@ public class LockscreenService extends Service {
     }
 
     private void sendNotification(String url, String title, String messageBody) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
 
@@ -124,7 +124,7 @@ public class LockscreenService extends Service {
 
         if (Build.VERSION.SDK_INT >= 26) {
             notificationBuilder = new NotificationCompat.Builder(this, "ViVi Screen")
-                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setSmallIcon(R.mipmap.app_icon)
                     .setContentTitle(title)
                     .setContentText(messageBody)
                     .setAutoCancel(true)
@@ -133,7 +133,7 @@ public class LockscreenService extends Service {
                     .setContentIntent(pendingIntent);
         } else {
             notificationBuilder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setSmallIcon(R.mipmap.app_icon)
                     .setContentTitle(title)
                     .setContentText(messageBody)
                     .setAutoCancel(true)
