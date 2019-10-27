@@ -1,7 +1,7 @@
 # ViViScreen_Android
 
 <b>About</b><br/>
-ViViScreen is the first Dapp of Groo Corporation.<br />
+ViViScreen is the first Dapp of Adward Platform.<br />
 
 <b>Getting Started</b><br/>
 1)Clone project<br/>
